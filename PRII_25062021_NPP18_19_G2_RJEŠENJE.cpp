@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <thread>
+#include <regex>
 #include <mutex>
 
 using namespace std;
@@ -138,7 +139,6 @@ public:
             objekat->AddElement(_elementi1[i], _elementi2[i]);
         return *objekat;
     }
-    //referenca?
     T1 getElement1(int lokacija)const { return _elementi1[lokacija]; }
     T2 getElement2(int lokacija)const { return _elementi2[lokacija]; }
     int getTrenutno()const { return *_trenutno; }
